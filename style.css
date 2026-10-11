@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  margin: 0;
+}
+
+/* Header section using flex */
+
+header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    header{
+        max-width: 533px;
+        margin: auto;
+    }
+}
+
+
+
+/* Tittle edition */
+#title {
+  margin-top: -20px;
+  font-size: 24px;
+}
+@media (min-width: 500px) {
+   #title{
+    position: relative;
+    left: -50px;
+  
+   }
+   
+}
+nav {
+  margin-top: 8px;
+}
+
+#lifeSpan {
+  color: rgb(3, 3, 233);
+  position: relative;
+  left: -5px;
+}
+
+.na {
+  text-decoration: none;
+  color: black;
+  transition: font-size;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  margin-left: 3px;
+}
+
+.na:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+  font-size: 1.5em;
+}
+
+/* logo styling */
+.fa-leaf {
+  color: blue;
+  margin-top: 8px;
+  position: relative;
+  left: 20px;
+  top: 2px;
+}
+
+/* Hero styling */
+#hero {
+  background-image: url(athina-vrikki-V2qwthwB-2k-unsplash.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+
+@media( min-width: 500px) {
+    #hero{
+        max-width: 533px;
+        margin: auto;
+    }
+}
+
+#health {
+  width: 80%;
+  padding: 10px;
+  position: relative;
+}
+
+#health h1 {
+  color: #00008b;
+}
+#bright {
+  color: #1839f3;
+}
+
+/* hero btn */
+#health a {
+  background: rgb(23, 102, 180);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 2.5em;
+}
+
+/* right on btn */
+.fa-arrow-right {
+  position: absolute;
+  left: 105px;
+  color: white;
+  animation: abdul;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes abdul {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 45px;
+  }
+}
+
+/* Why choose section */
+#why {
+  text-align: center;
+}
+
+.head {
+  color:#00008b;
+  font-size: 1.6em;
+  font-weight: 800;
+  
+
+  
+}
+
+.grayColor{
+    color: rgb(70, 67, 67);
+    margin-top: -15px;
+}
+
+/* cards */
+#cards{
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    
+}
+@media (min-width: 500pxscreen) {
+   #cards{
+    display: block;
+   } 
+}
+
+
+.main{
+    width: 30%;
+    background: rgba(237, 242, 243, 0.671);
+    padding: 8px;
+    border: 1px solid rgb(218, 233, 241);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .main{
+        display: grid;
+         grid-template-columns: 1fr 1fr 1fr
+
+    }
+    
+}
+
+/* card one */
+.circle{
+    width: 40px;
+    background: rgba(162, 204, 165, 0.589);
+    padding: 10px;
+    margin:auto ;
+    border-radius: 50%;
+    
+}
+
+.circle i{
+    color: rgb(6, 192, 6);
+}
+
+/* card two */
+.heart{
+    width: 40px;
+    background: rgba(90, 95, 165, 0.589);
+    padding: 10px;
+    margin:auto ;
+    border-radius: 50%;
+}
+
+.heart i{
+    color: rgb(51, 53, 184);
+}
+
+/* last card */
+
+.lastIcone{
+    width: 40px;
+    background: rgba(179, 58, 152, 0.589);
+    padding: 10px;
+    margin:auto ;
+    border-radius: 50%;
+}
+.lastIcone i{
+    color: rgb(180, 60, 180);
+}
+
+footer{
+    background: #0c1b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+footer .na{
+    color: gray;
+    font-size: .7em;
+    
+}
+
+footer .fa-leaf{
+    color: rgb(56, 33, 255);
+    position: relative;
+    left:50px;
+}
+
+footer #lifeSpan{
+    color: dodgerblue;
+}
+
+#finally{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    color: gray;
+    font-size: .5em;
+    gap:180px ;
+    justify-content: space-around;
+
+}
